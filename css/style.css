@@ -1,0 +1,183 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(90deg, rgb(27, 18, 29) 0%, rgb(18, 15, 47) 50%, rgb(27, 18, 29) 100%);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  color: white;
+}
+
+.content {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+}
+.content b {
+  border: 2px solid purple;
+  border-radius: 50%;
+  padding: 10px;
+}
+.content p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.content h3 {
+  margin-bottom: 30px;
+}
+.content .line {
+  height: 1px;
+  width: 20%;
+  background-color: white;
+  transition: 0.3s all linear;
+}
+.content h4 {
+  margin-left: 22%;
+  transform: translateY(-8px);
+  opacity: 0;
+  transition: 0.3s all linear;
+}
+.content .main {
+  border: 1px solid grey;
+  border-radius: 10px;
+  width: 45%;
+  padding: 20px;
+  height: 852px;
+}
+.content .main:hover h3 {
+  transition: 0.3s all linear;
+  color: purple;
+}
+.content .main:hover .line {
+  transition: 0.3s all linear;
+  width: 5%;
+}
+.content .main:hover h4 {
+  transition: 0.3s all linear;
+  margin-left: 8%;
+  opacity: 1;
+  color: purple;
+}
+.content .main img {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+.content .main2 {
+  width: 45%;
+  height: 850px;
+}
+.content .main2 .section {
+  border: 1px solid grey;
+  border-radius: 10px;
+  width: 100%;
+  height: 264px;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+.content .main2 .section:hover h3 {
+  transition: 0.3s all linear;
+  color: purple;
+}
+.content .main2 .section:hover .line {
+  transition: 0.3s all linear;
+  width: 5%;
+}
+.content .main2 .section:hover h4 {
+  transition: 0.3s all linear;
+  margin-left: 8%;
+  opacity: 1;
+  color: purple;
+}
+
+.block {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  color: white;
+}
+.block button {
+  width: 45%;
+  border: 1px solid purple;
+  height: 50px;
+  background: linear-gradient(90deg, rgb(27, 18, 29) 0%, rgb(18, 15, 47) 50%, rgb(27, 18, 29) 100%);
+  color: white;
+  font-size: 20px;
+}
+.block .lor {
+  width: 45%;
+  height: 50px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+footer .line1 {
+  height: 1px;
+  width: 33%;
+  background-color: gray;
+  transform: translateY(3px);
+}
+footer .line2 {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: 1px solid gray;
+}
+footer .line3 {
+  height: 10px;
+  width: 20%;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+footer .line4 {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: 1px solid gray;
+}
+footer .line5 {
+  height: 1px;
+  width: 33%;
+  background-color: gray;
+  transform: translateY(3px);
+}
+
+@media (max-width: 795px) {
+  h1 {
+    display: none;
+  }
+  .content {
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+  .content .main {
+    width: 90%;
+  }
+  .content .main2 {
+    width: 90%;
+  }
+  .block {
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+  .block button {
+    width: 90%;
+  }
+  .block .lor {
+    width: 90%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
